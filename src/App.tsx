@@ -38,6 +38,8 @@ class App extends React.Component {
                   })}
               </div>
 
+              <div className="source">Source for data:
+                  <a href="https://de.wikipedia.org/wiki/Liste_der_Gro%C3%9Fst%C3%A4dte_in_Deutschland" target="_blank">Wikipedia</a> </div>
           </div>
         );
     }

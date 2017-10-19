@@ -22,3 +22,10 @@
 .title, population {
   display:flex;
 }
+
+
+.source {
+  font-size: 66%;
+  text-align: center;
+  margin-top: 10px;
+}
