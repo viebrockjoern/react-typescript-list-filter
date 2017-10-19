@@ -17,7 +17,6 @@ const cities = [
     {'title': 'Hannover', 'population': 532163}
 ];
 
-
 class App extends React.Component {
 
     render() {
@@ -27,12 +26,11 @@ class App extends React.Component {
               <h2>simple listing filter</h2>
             </div>
 
-
               <div className="listing">
-                  {cities.map(function(city: any) {
+                  {cities.map(function(city: {title: string, population: number}, key: number) {
 
                       return (
-                          <div className="entry">
+                          <div key={key} className="entry">
                               <div className="title">{city.title}</div>
                               <div className="population">{city.population}</div>
                           </div>
@@ -43,7 +41,6 @@ class App extends React.Component {
           </div>
         );
     }
-
 
 }
 
